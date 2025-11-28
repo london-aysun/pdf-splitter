@@ -1,7 +1,32 @@
 
 # PDF Splitter
 
-A simple Python tool to split a PDF into individual pages. 
+## Overview
+This project provides a Python-based solution to split a bulk PDF containing multiple certificates into individual PDF files. It supports automation for certificate distribution but can be used for any pdf.
+---
+
+## Architecture Diagram
+```mermaid
+flowchart LR
+    subgraph CLI
+        A[Command-Line Interface]
+    end
+
+    subgraph Core
+        B[PDF Splitter Application]
+        C[Error Handling & Logging]
+        D[PDF Processing Library (PyPDF2)]
+    end
+
+    subgraph Testing
+        E[Unit Tests (pytest)]
+    end
+
+    subgraph Deployment
+        F[Docker Container]
+        G[CI/CD Pipeline (GitHub Actions)]
+    end
+ 
 
 Important: your imput file must be named input.pdf;  Curreny script handles PF only.
 
