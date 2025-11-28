@@ -10,5 +10,11 @@ output_pages/
 output/
 certificates/
 
+# Test files
+input.pdf
+
 # OS-specific files
 .DS_Store
+
+# Email or sensitive files
+*.eml
