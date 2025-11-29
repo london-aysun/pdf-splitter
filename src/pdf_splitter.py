@@ -14,7 +14,7 @@ def split_pdf(input_pdf, output_folder):
         writer = PdfWriter()
         writer.add_page(page)
 
-        output_path = os.path.join(output_folder, f"page_{i + 1}.pdf")
+        output_path = os.path.join(output_folder, f"cross_gov_code_retreat_certifiacte{i + 1}.pdf")
         with open(output_path, "wb") as output_file:
             writer.write(output_file)
 
